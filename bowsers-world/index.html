@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bowsers Kingdom</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div class="start-screen">
+            <div class="searchlight"></div>   
+        <div class="title-box">
+            <img src="images/bowsers-kingdom-logo.png" alt="Bowsers Kingdom Title">
+            <img src="images/castle.gif" alt="Bowsers Castle gif">
+                <div class="start-button">
+                <img src="images/bowser-white-small.png" alt="White bowser logo">
+                <button id="btn-start" class="btn btn-start">Start</button>
+                
+                </div><!-- end of start-button -->
+        </div><!-- end of title-box -->
+    </div><!-- end of start-screen -->
+
+<div class="game-screen">
+    <div class="title-bar">
+        <img class="game-title" src="images/bowsers-kingdom-small.png" alt="Bowser Kingdom Title">
+
+        <div class="game-stats">
+
+            <div class="turns">
+            <span>Turns: </span>
+            <span id="turn-output" class="turn-output">00</span>
+
+            
+            </div><!-- end of turns -->
+
+                <div class="matches">
+                <span>Matches: </span>
+                <span id="match-output" class="match-output">00</span>
+
+                </div><!-- end of matches -->
+
+            <div class="game_timer">
+                <span>Time: </span>
+                <span id="timer">0:00</span>
+
+            </div><!-- end of timer -->
+
+            <div class="rules">
+                    <button id="btn-rules" class="btn-rules">
+                        <img src="images/bowser-white-small.png" alt="White bowser logo">Rules<img src="images/bowser-white-small.png" alt="White bowser logo">
+                    </button>
+            </div>
+
+
+        </div><!-- end of game-starts -->
+    </div><!-- end of title-bar -->
+
+    <div class="bowser-box">
+
+        <div class="bowser">
+        <img src="images/bowser-standing.gif" alt="Bowser">
+        </div>
+        
+        <div class="bowser">
+        <img src="images/bowser-laugh.gif" alt="Bowser laughing">
+        </div>
+
+        <div class="bowser">
+        <img src="images/bowser-swipe.gif" alt="Bowser swiping">
+        </div>
+        
+        <div class="bowser">
+        <img src="images/bowser-standing.gif" alt="Bowser">
+        </div>
+
+        <div class="bowser">
+        <img src="images/bowser-reading.gif" alt="Bowser reading">
+        </div>
+        
+        <div class="bowser">   
+        <img src="images/bowser-waiting.gif" alt="Bowser waiting">
+        </div>
+
+        <div class="bowser">   
+        <img src="images/bowser-punch.gif" alt="Bowser punching">
+        </div>
+
+        <div class="bowser">   
+        <img src="images/bowser-laugh-hard.gif" alt="Bowser hard laugh">
+        </div>
+        
+    </div>
+
+    <div class="bowserjr">
+        <img src="images/bowser-jr.gif" alt="Bowser Jr.">
+    </div>
+
+    <div class="lava-1">
+        <img src="images/mario-fire-short.gif" alt="Lava">
+
+    </div>
+
+    <div class="lava-2">
+        <img src="images/mario-fire--long.gif" alt="Lava">
+    </div>
+
+<div class="game-board">
+
+    <div class="card flip-container card-01">
+        <div class="flipper">
+        <div class="front-card">
+        <img src="images/card-back.jpg" alt="Back of card">
+        </div><!-- end of front-card -->
+        <div class="card-image back-card">
+        <img src="images/magikoops.jpg" alt="Magikoopa">
+        </div><!-- end of back-card -->
+
+        </div><!-- end of flipper -->
+    </div><!-- end of card -->
+    
+    <div class="card flip-container card-02">
+            <div class="flipper">
+            <div class="front-card">
+            <img src="images/card-back.jpg" alt="Back of card">
+            </div><!-- end of front-card -->
+            
+            <div class="card-image back-card">
+            <img src="images/magikoops.jpg" alt="Magikoopa">
+            </div><!-- end of back-card -->
+    
+            </div><!-- end of flipper -->
+        </div><!-- end of card -->
+
+    <div class="card flip-container card-03">
+            <div class="flipper">
+            <div class="front-card">
+            <img src="images/card-back.jpg" alt="Back of card">
+            </div><!-- end of front-card -->
+                
+            <div class="card-image back-card">
+            <img src="images/magikoops.jpg" alt="Magikoopa">
+            </div><!-- end of back-card -->
+        
+            </div><!-- end of flipper -->
+        </div><!-- end of card -->  
+
+    <div class="card flip-container card-04">
+            <div class="flipper">
+            <div class="front-card">
+            <img src="images/card-back.jpg" alt="Back of card">
+            </div><!-- end of front-card -->
+            
+            <div class="card-image back-card">
+            <img src="images/magikoops.jpg" alt="Magikoopa">
+            </div><!-- end of back-card -->
+    
+            </div><!-- end of flipper -->
+        </div><!-- end of card -->
+
+    <div class="card flip-container card-05">
+            <div class="flipper">
+            <div class="front-card">
+            <img src="images/card-back.jpg" alt="Back of card">
+            </div><!-- end of front-card -->
+                
+            <div class="card-image back-card">
+            <img src="images/magikoops.jpg" alt="Magikoopa">
+            </div><!-- end of back-card -->
+        
+            </div><!-- end of flipper -->
+        </div><!-- end of card -->
+
+    <div class="card flip-container card-06">
+            <div class="flipper">
+            <div class="front-card">
+            <img src="images/card-back.jpg" alt="Back of card">
+            </div><!-- end of front-card -->
+        
+            <div class="card-image back-card">
+            <img src="images/magikoops.jpg" alt="Magikoopa">
+            </div><!-- end of back-card -->
+
+        </div><!-- end of flipper -->
+    </div><!-- end of card -->
+    
+    <div class="card flip-container card-07">
+            <div class="flipper">
+            <div class="front-card">
+            <img src="images/card-back.jpg" alt="Back of card">
+            </div><!-- end of front-card -->
+        
+            <div class="card-image back-card">
+            <img src="images/magikoops.jpg" alt="Magikoopa">
+            </div><!-- end of back-card -->
+
+        </div><!-- end of flipper -->
+    </div><!-- end of card -->
+
+<div class="card flip-container card-08">
+            <div class="flipper">
+            <div class="front-card">
+            <img src="images/card-back.jpg" alt="Back of card">
+            </div><!-- end of front-card -->
+        
+            <div class="card-image back-card">
+            <img src="images/magikoops.jpg" alt="Magikoopa">
+            </div><!-- end of back-card -->
+
+        </div><!-- end of flipper -->
+    </div><!-- end of card -->
+
+<div class="card flip-container card-09">
+            <div class="flipper">
+            <div class="front-card">
+            <img src="images/card-back.jpg" alt="Back of card">
+            </div><!-- end of front-card -->
+        
+            <div class="card-image back-card">
+            <img src="images/magikoops.jpg" alt="Magikoopa">
+            </div><!-- end of back-card -->
+
+        </div><!-- end of flipper -->
+    </div><!-- end of card -->
+
+<div class="card flip-container card-10">
+            <div class="flipper">
+            <div class="front-card">
+            <img src="images/card-back.jpg" alt="Back of card">
+            </div><!-- end of front-card -->
+        
+            <div class="card-image back-card">
+            <img src="images/magikoops.jpg" alt="Magikoopa">
+            </div><!-- end of back-card -->
+
+        </div><!-- end of flipper -->
+    </div><!-- end of card -->
+
+    <div class="card flip-container card-11">
+            <div class="flipper">
+            <div class="front-card">
+            <img src="images/card-back.jpg" alt="Back of card">
+            </div><!-- end of front-card -->
+        
+            <div class="card-image back-card">
+            <img src="images/magikoops.jpg" alt="Magikoopa">
+            </div><!-- end of back-card -->
+
+        </div><!-- end of flipper -->
+    </div><!-- end of card -->    
+
+    <div class="card flip-container card-12">
+            <div class="flipper">
+            <div class="front-card">
+            <img src="images/card-back.jpg" alt="Back of card">
+            </div><!-- end of front-card -->
+        
+            <div class="card-image back-card">
+            <img src="images/magikoops.jpg" alt="Magikoopa">
+            </div><!-- end of back-card -->
+
+        </div><!-- end of flipper -->
+    </div><!-- end of card -->
+
+    <div class="card flip-container card-13">
+            <div class="flipper">
+            <div class="front-card">
+            <img src="images/card-back.jpg" alt="Back of card">
+            </div><!-- end of front-card -->
+        
+            <div class="card-image back-card">
+            <img src="images/magikoops.jpg" alt="Magikoopa">
+            </div><!-- end of back-card -->
+
+        </div><!-- end of flipper -->
+    </div><!-- end of card -->
+
+    <div class="card flip-container card-14">
+            <div class="flipper">
+            <div class="front-card">
+            <img src="images/card-back.jpg" alt="Back of card">
+            </div><!-- end of front-card -->
+        
+            <div class="card-image back-card">
+            <img src="images/magikoops.jpg" alt="Magikoopa">
+            </div><!-- end of back-card -->
+
+        </div><!-- end of flipper -->
+    </div><!-- end of card -->
+
+    <div class="card flip-container card-15">
+            <div class="flipper">
+            <div class="front-card">
+            <img src="images/card-back.jpg" alt="Back of card">
+            </div><!-- end of front-card -->
+        
+            <div class="card-image back-card">
+            <img src="images/magikoops.jpg" alt="Magikoopa">
+            </div><!-- end of back-card -->
+
+        </div><!-- end of flipper -->
+    </div><!-- end of card -->
+
+    <div class="card flip-container card-16">
+            <div class="flipper">
+            <div class="front-card">
+            <img src="images/card-back.jpg" alt="Back of card">
+            </div><!-- end of front-card -->
+        
+            <div class="card-image back-card">
+            <img src="images/magikoops.jpg" alt="Magikoopa">
+            </div><!-- end of back-card -->
+
+        </div><!-- end of flipper -->
+    </div><!-- end of card -->
+
+    <div class="card flip-container card-17">
+            <div class="flipper">
+            <div class="front-card">
+            <img src="images/card-back.jpg" alt="Back of card">
+            </div><!-- end of front-card -->
+        
+            <div class="card-image back-card">
+            <img src="images/magikoops.jpg" alt="Magikoopa">
+            </div><!-- end of back-card -->
+
+        </div><!-- end of flipper -->
+    </div><!-- end of card -->
+
+    <div class="card flip-container card-18">
+            <div class="flipper">
+            <div class="front-card">
+            <img src="images/card-back.jpg" alt="Back of card">
+            </div><!-- end of front-card -->
+        
+            <div class="card-image back-card">
+            <img src="images/magikoops.jpg" alt="Magikoopa">
+            </div><!-- end of back-card -->
+
+        </div><!-- end of flipper -->
+    </div><!-- end of card -->
+
+    <div class="card flip-container card-19">
+            <div class="flipper">
+            <div class="front-card">
+            <img src="images/card-back.jpg" alt="Back of card">
+            </div><!-- end of front-card -->
+        
+            <div class="card-image back-card">
+            <img src="images/magikoops.jpg" alt="Magikoopa">
+            </div><!-- end of back-card -->
+
+        </div><!-- end of flipper -->
+    </div><!-- end of card -->
+
+    <div class="card flip-container card-20">
+            <div class="flipper">
+            <div class="front-card">
+            <img src="images/card-back.jpg" alt="Back of card">
+            </div><!-- end of front-card -->
+        
+            <div class="card-image back-card">
+            <img src="images/magikoops.jpg" alt="Magikoopa">
+            </div><!-- end of back-card -->
+
+        </div><!-- end of flipper -->
+    </div><!-- end of card -->
+
+    <div class="card flip-container card-21">
+            <div class="flipper">
+            <div class="front-card">
+            <img src="images/card-back.jpg" alt="Back of card">
+            </div><!-- end of front-card -->
+        
+            <div class="card-image back-card">
+            <img src="images/magikoops.jpg" alt="Magikoopa">
+            </div><!-- end of back-card -->
+
+        </div><!-- end of flipper -->
+    </div><!-- end of card -->
+
+    <div class="card flip-container card-22">
+            <div class="flipper">
+            <div class="front-card">
+            <img src="images/card-back.jpg" alt="Back of card">
+            </div><!-- end of front-card -->
+        
+            <div class="card-image back-card">
+            <img src="images/magikoops.jpg" alt="Magikoopa">
+            </div><!-- end of back-card -->
+
+        </div><!-- end of flipper -->
+    </div><!-- end of card -->
+
+    <div class="card flip-container card-23">
+            <div class="flipper">
+            <div class="front-card">
+            <img src="images/card-back.jpg" alt="Back of card">
+            </div><!-- end of front-card -->
+        
+            <div class="card-image back-card">
+            <img src="images/magikoops.jpg" alt="Magikoopa">
+            </div><!-- end of back-card -->
+
+        </div><!-- end of flipper -->
+    </div><!-- end of card -->
+
+    <div class="card flip-container card-24">
+            <div class="flipper">
+            <div class="front-card">
+            <img src="images/card-back.jpg" alt="Back of card">
+            </div><!-- end of front-card -->
+        
+            <div class="card-image back-card">
+            <img src="images/magikoops.jpg" alt="Magikoopa">
+            </div><!-- end of back-card -->
+
+        </div><!-- end of flipper -->
+    </div><!-- end of card -->
+
+    <div class="card flip-container card-25">
+            <div class="flipper">
+            <div class="front-card">
+            <img src="images/card-back.jpg" alt="Back of card">
+            </div><!-- end of front-card -->
+        
+            <div class="card-image back-card">
+            <img src="images/magikoops.jpg" alt="Magikoopa">
+            </div><!-- end of back-card -->
+
+        </div><!-- end of flipper -->
+    </div><!-- end of card -->
+
+    <div class="card flip-container card-26">
+            <div class="flipper">
+            <div class="front-card">
+            <img src="images/card-back.jpg" alt="Back of card">
+            </div><!-- end of front-card -->
+        
+            <div class="card-image back-card">
+            <img src="images/magikoops.jpg" alt="Magikoopa">
+            </div><!-- end of back-card -->
+
+        </div><!-- end of flipper -->
+    </div><!-- end of card -->
+
+    <div class="card flip-container card-27">
+            <div class="flipper">
+            <div class="front-card">
+            <img src="images/card-back.jpg" alt="Back of card">
+            </div><!-- end of front-card -->
+        
+            <div class="card-image back-card">
+            <img src="images/magikoops.jpg" alt="Magikoopa">
+            </div><!-- end of back-card -->
+
+        </div><!-- end of flipper -->
+    </div><!-- end of card -->
+
+    <div class="card flip-container card-28">
+            <div class="flipper">
+            <div class="front-card">
+            <img src="images/card-back.jpg" alt="Back of card">
+            </div><!-- end of front-card -->
+        
+            <div class="card-image back-card">
+            <img src="images/magikoops.jpg" alt="Magikoopa">
+            </div><!-- end of back-card -->
+
+        </div><!-- end of flipper -->
+    </div><!-- end of card -->
+
+</div><!-- end of game-board -->
+
+        <div class="end-game-btn-container">
+        <button class="btn btn-end-game" id="btn-end-game">
+            End Game
+        </button>
+        </div><!-- end of end-game-btn-container -->
+
+</div><!-- end of game-screen -->
+
+<!-- pop up box -->
+
+<div class="overlay-sound">
+        <div class="end-game-pop-up end-game-win">
+            <div class="pop-up-text">
+                <p>Crank it UP!!!</p>
+                <p>turn on the music?</p>
+            </div>
+            <div class="pop-up-image">
+                <img src="images/bowser-complain.gif" alt="Bowser complaining">
+            </div>
+            <button class="btn btn-play-again btn-music-yes" id="btn-music-yes">Yes</button>
+            <button class="btn btn-play-again btn-music-no" id="btn-music-no">No</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay-rules">
+            <div class="rules-pop-up">
+                <div class="rules-text">
+                        <img src="images/bowser-white-small.png" alt="White bowser logo">Rules<img src="images/bowser-white-small.png" alt="White bowser logo">
+                </div>
+                <div class="rules-pop-up-image">
+                    
+                    <img src="images/death-card.jpg" alt="Mario card">
+                    <img class="bowser-and-jr" src="images/bowser-and-jr.gif" alt="Bowser holding Bowser Jr.">
+                    <img src="images/death-card.jpg" alt="Mario card">
+                </div>
+                <div class="rules-text-02">
+                <p>Do not match this card!</p>
+                <p>you have 2 minutes... GO!!!</p>
+                </div>
+                <button class="btn-rules-close" id="btn-rules-close">Close</button>
+                </div>
+            </div>
+        </div>
+    
+<div class="overlay-win">
+    <div class="end-game-pop-up end-game-win">
+        <div class="pop-up-text">
+            <p>YOU WIN!!!</p>
+        </div>
+        <div class="pop-up-image">
+            <img src="images/bowser-chasing-mario.gif" alt="Bowser chasing Mario">
+        </div>
+        <div class='play-again'>
+        <p>Play Again?</p>
+        <button class="btn btn-play-again btn-play-again-yes" id="btn-play-again-win-yes">Yes</button>
+        <button class="btn btn-play-again btn-play-again-no" id="btn-play-again-win-no">No</button>
+        </div>
+    </div>
+</div>
+
+<div class="overlay-lose">
+        <div class="end-game-pop-up end-game-win">
+            <div class="pop-up-text">
+                <p>YOU SUCK!</p>
+            </div>
+            <div class="pop-up-image">
+                <img src="images/bowser-fail-once.gif" alt="Bowser Fail">
+            </div>
+            <div class='play-again'>
+            <p>Play Again?</p>
+            <button class="btn btn-play-again btn-play-again-yes" id="btn-play-again-win-yes">Yes</button>
+            <button class="btn btn-play-again btn-play-again-no" id="btn-play-again-win-no">No</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay-come">
+            <div class="end-game-pop-up end-game-win">
+                <div class="pop-up-text">
+                    <p>Come with me...</p>
+                    <p>Lets play a REAL game!!</p>
+                </div>
+                <div class="pop-up-image">
+                    <img src="images/mario-cape.gif" alt="Mario running with cape">
+                </div>
+                <div class='play-again'>
+                    <a href="https://www.smashbros.com/en_US/" target="_blank">Click Here!</a> or 
+                    <a href="index.html">Not...</a>
+                </div>
+            </div>
+        </div>
+        <footer>
+<audio id="underground" src="sounds/underground.mp3"></audio>
+<audio id="main-music" src="sounds/bowser-music.mp3"></audio>
+<audio id="coin" src="sounds/coin.mp3"></audio>
+<audio id="wrong" src="sounds/no-match.mp3"></audio>
+<audio id="game-over" src="sounds/smb_gameover.mp3"></audio>
+<audio id="card-click" src="sounds/smw_kick.mp3"></audio>
+<audio id="mario-card" src="sounds/sm64_mario_its_me.mp3"></audio>
+<audio id="win-music" src="sounds/smb_stage_clear.mp3"></audio>
+        </footer>
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"   
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   
+        crossorigin="anonymous"></script>
+        <script src="js/spotlight.js"></script>
+        <script src="js/bowser.js"></script>
+<script src="js/cards.js"></script>
+<script src="js/timer.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>
