@@ -1,0 +1,108 @@
+body{
+    background-color: #313131;
+}
+
+h2{
+    margin: 0;
+}
+
+.genre{
+    text-align: center;
+}
+
+.pickGenre{
+    color:white;
+}
+
+.pickGenre select{
+    padding:2px;
+    border:none;
+    background-color:#313131;
+    color: white;
+    font-size:15px;
+}
+
+
+.moviePoster{
+    margin-top:10px;
+    padding: 10px 0;
+}
+.moviePoster img{
+    width:240px;
+
+}
+
+.movieOverview p{
+    margin:3px 0;
+}
+
+.movieOTitle{
+    font-size:16px;
+}
+
+.movieDiv{
+    
+    background-color: rgb(255, 255, 255);
+    max-width: 900px;
+    display:flex;
+    padding: 10px 30px;
+    margin: 20px auto;
+}
+
+.movieInfo{
+    margin: 10px 60px;
+    width: 700px;
+
+}
+
+.movieOverview{
+    font-size:14px;
+}
+.pages{
+    text-align:center;
+}
+.pages button{
+    font-size: 1.3em;
+    background-color:#313131;
+    border:none;
+    color:#ff62f2;  
+}
+
+
+.pages button.active.control{
+    color: white;
+}
+
+
+nav ul{
+    display:flex;
+    justify-content: space-around;
+    list-style:none;
+
+}
+nav li{
+    display:block;
+}
+nav a{
+    color:white;
+    font-size: 18px;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+nav a:hover{
+    color:#ff62f2;
+}
+
+.about{
+    margin:30px auto;
+    max-width: 700px;
+    color:white;
+}
+.aboutImg{
+    width: 700px;
+}
+
+.movieStats p{
+    font-size: 15px;
+}
