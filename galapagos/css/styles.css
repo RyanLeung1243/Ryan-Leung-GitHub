@@ -1,0 +1,661 @@
+@charset "utf-8";
+
+/* Resets */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+
+}
+/* Image reset */
+img {
+    max-width: 100%;
+    height: auto;
+}
+sup{
+    font-size:0.5em;
+}
+
+body {
+    margin:0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("../images/turtle-bg-retina.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color:black;
+    min-height:100vh;
+    
+     
+}
+
+.animals-page{
+    background-image:url("../images/lizard-bg-retina.jpg");
+    background-color:black;
+    background-size:contain;
+}
+.regions-page{
+    background-image:url("../images/islands-2-bg-pixabay.jpg");
+    background-color:black;
+    background-size:contain;
+}
+.credits-page{
+    background-image:url("../images/camera-bg.jpg");
+    background-size:cover;
+    min-height:100vh;
+
+}
+
+
+.animals-page-header{
+    height:55vh;
+}
+.region-page-header{
+    height:30vh;
+}
+.credits-page-header{
+    height:60px;
+}
+h1, h2, h3 nav a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1, h2, h3, p, ul {
+    margin-top:0;
+}
+
+p { line-height:1.3;
+}
+
+header {
+    height:100vh;
+}
+
+.big-bar{
+    width:100%;
+    margin: 0;
+    display:flex;
+    justify-content: space-between;
+    height: 60px; 
+    background-color:#060606;
+    color: #aecca4;  
+    padding-top:5px;
+    position:fixed;
+}
+.top-title a{
+    color: white;
+    margin:80px;
+    font-size:40px;
+    text-decoration: none;
+}
+
+.top-bar ul{
+    display:flex;
+    justify-content:space-between;
+    padding-right:100px;
+}
+.top-bar li{
+    margin:0;
+    padding: 12px 30px;
+    list-style:none;
+    font-size:20px;
+}
+.top-bar a{
+    text-decoration:none;
+    color: #aecca4;
+}
+.top-bar a:hover{
+    color: white;
+    border-bottom:#1fb622 solid 3px;
+    padding-bottom: 3px;
+}
+.top-bar a:active{
+    color:white; 
+}
+.top-bar a:focus {
+    color:white;
+}
+.top-bar .active{
+    color:white;
+    border-bottom:#1fb622 solid 3px;
+    padding-bottom: 3px;
+}
+/* end of nav bar */
+main{ 
+    background-color:#060606d5;
+    height:max-content;
+    color: #aecca4;
+    width:100%
+}
+.container-01 { 
+    margin: auto;
+    /* margin-bottom:0; */
+    padding:30px 50px;
+    
+} 
+.about-01,
+.top-sites,
+.animals-01{
+    height:max-content;
+    text-align:left;
+    padding: 15px 45px;
+    background-color:#060606fd;
+    width:90vw;
+    margin:auto;
+}
+.regions-title,
+.regions-title-01{
+    height:max-content;
+    text-align:left;
+    width:100vw;
+    margin-right:30px;
+    padding-left:50px;
+}
+
+.credits-section{
+    padding:30px 45px;
+    height:max-content;
+    text-align:left;
+}
+.regions-title h1,
+.about-01 h1,
+.credits-section h1{
+    width:100vw;
+    color:white;
+    margin: 20px;
+}
+
+.green-tab,
+.green-tab-02{
+    background-color: #1fb622;
+    width:8px;
+    line-height: 1.4;
+}
+.green-tab-03{
+    background-color: #1fb622;
+    width:8px;
+    line-height: .8;
+    margin: 30px 40px 20px 40px;
+}
+.about-02{
+    margin: auto;
+    height:max-content;
+    text-align:center;
+    display:flex;
+    justify-content: space-between;
+    padding:0px 40px;
+    width:85vw;
+}
+.culture,
+.food,
+.history {
+    background-color:#060606fd;
+    width:300px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+
+    
+}
+.culture h2,
+.food h2,
+.history h2{
+    color:white;
+    padding:5px 0;
+    margin:0 20px;
+}
+
+.culture p,
+.food p,
+.history p{
+    text-align:left;
+    margin-left:40px;
+    margin-right: 40px;
+}
+.green-button{
+    margin-top:30px;
+    
+}
+.green-button a{
+    background-color:#1fb622;
+    color: white;
+    padding:5px;
+    text-decoration:none;
+    box-shadow: 5px 5px 5px rgba(141, 141, 141, 0.082);
+}
+.green-button a:hover{
+    background-color:black;
+    color:white;
+    border: 2px #1fb622 solid;
+} 
+/* end of about section */
+.container-02{
+    background-color:#2424246b;
+    padding:30px 50px;
+}
+.container-03{
+    background-color:#080808;
+    padding-top:30px;
+    padding-bottom:30px;
+    width:100%;
+}
+.container-04{
+    background-color:#202020;
+    padding:30px 50px;
+    width:100%;
+
+}
+.top-sites h2{
+    width:400px;
+    color:white;
+    margin:20px;
+}
+.links-box{
+    display:flex;
+    justify-content: space-between;
+    margin:0;
+    padding:5px;
+}
+.links-box article{
+    font-size:17px;
+}
+.links-box ul{
+    list-style:none;
+    padding-left:0;
+}
+.links-box li{
+    padding-top:10px;
+}
+.links-box a{
+    color:#aecca4;
+    text-decoration:none;
+}
+.links-box a:hover{
+    color: white;
+    border-bottom:#1fb622 solid 1px;
+}
+.links-box a:active{
+    color: white;
+}
+.links-box a:focus {
+    color:white;
+}
+.top-sites,
+.about-01
+{
+    width:70vw;
+}
+.info p,
+.about-01 p{
+    /* margin:0 60px; */
+    padding-top: 10px 0;
+    width: 55vw;
+    margin-left:80px;
+}
+.partition{
+    border-left: 1px #aecca4 solid;
+    padding-left: 8%;
+}
+    
+/* end of top-webpage section - MAIN */
+footer{
+    background-color: #060606;
+    border-top: #1fb622 1px solid;
+}
+.footer-box{
+    margin: auto;
+    display:flex;
+    justify-content:space-between;
+    width:90vw;
+}
+
+.copyright{
+    color:white;
+    margin-top:30px;
+}
+.credits {
+    margin-top:30px;
+    color:#aecca4;
+}
+.social{
+    margin-top:20px;
+}
+.credits a{
+    color:#aecca4;
+    text-decoration: none;
+}
+.credits a:hover{
+    color:white;
+    border-bottom:#1fb622 solid 1px;
+}
+.social ul{
+    display:flex;
+    justify-content: space-between;
+    width: 150px;
+}
+.social li{
+    list-style:none;
+    padding: 5px;
+}
+
+/* start of animals page */
+.animals{
+    display:flex;
+}
+.animals-01 h2{
+    margin:20px;
+    color:white;
+    height:30px;
+}
+.animals-01 h3{
+    color:white;
+    padding-top:30px;
+}
+.row-01,
+.row-02{
+    display:flex;
+    justify-content:space-evenly;
+    width:90vw;
+}
+.animal-info{
+    padding-right:70px;
+}
+.animal-info p{
+    padding-top:10px;
+    width: 26vw;
+}
+
+.bottom-photo {
+    width:100vw;
+}
+/* start of regions */
+.regions-top{
+    margin:0;
+    
+}
+.regions-top figure{
+    width:max-content;
+    margin:50px 0px;
+}
+
+table{
+    width:830px;
+    padding-right:30px;
+    margin:30px 0px;
+    height:450px;
+}
+th{
+    color:#aecca4;
+    font-size:22px;
+}
+tr:nth-child(even) {
+    background-color: #aecca417;
+    color:white;
+    padding:20px;
+}
+/* credits */
+.credits-01 h2,
+.credits-01 h3,
+.credits-01 p{
+    color:white;
+    margin-left:20px;
+
+}
+.credits-section-02{
+    margin:50px 100px;
+}
+.credits-section-02 a{
+    color:#aecca4;
+    text-decoration:none;
+}
+.credits-section-02 a:hover{
+    color:white;
+    border-bottom:#1fb622 solid 1px;
+}
+.regions-info{
+    display:flex;
+    width:80%;
+    margin: auto;
+}
+.regions-title-01 table{
+    width:300px;
+}
+.regions-title-01 figure{
+    margin:0;
+
+}
+figcaption {
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: left;
+}
+.old-map{
+    padding-top:60px;
+}
+
+@media  screen and (max-width: 1500px){
+ 
+    .animal-info p{
+        width: 35vw;
+    }
+    .regions-info{
+        display:block;
+        width:60vw;
+    }
+    .regions-title-01{
+        display:flex;
+        justify-content: space-between;
+        width: 100%;
+        padding:0;
+    }
+    .regions-title{
+        padding:0;
+    }
+    .volcano{
+        padding-top: 80px;
+    }
+
+}
+
+
+@media  screen and (max-width: 1200px){
+    body{
+        background-size:contain;
+    }
+    header{
+        height:70vh;
+    }
+    .animals-page-header{
+        height:45vh;
+    }
+    .top-title a{
+        margin:50px;
+        font-size:30px;
+        line-height: 2em;    
+    }
+    .top-bar a{
+
+        font-size: 18px;
+        line-height: 1em;    }
+
+    .animal-info{
+        width: 40vw;
+        }
+    .animal-info p{
+            width: 33vw;
+            font-size: .9em;
+        }
+
+
+
+}
+
+@media screen and (max-width: 1000px){
+    body{
+        background-position: 0 145px;
+    }
+    .big-bar{
+        display:block;
+        height:15vh;
+    }
+    .about-01{
+        padding:0;
+    }
+    .about-01 h1,
+    .regions-title h1{
+        font-size: 1.2em;
+    }
+    .about-01 p{
+        font-size: .8em;
+    }
+    .about-02 p{
+        font-size: .8em;
+    }
+    .info p,
+    .animals-01 p{
+        font-size: .7em;
+    }
+    .animal-info p{
+        width: 32vw;
+    }
+    .top-sites{
+        padding: 10px 30px;
+    }
+    .top-sites h2,
+    .animals-01 h2
+    {
+        font-size: 1.2em;
+    }
+    .top-sites a{
+        font-size: .8em;
+    }
+    .animals-01 h3{
+        font-size: .8em;
+    }
+    .regions-top figure,
+    .regions-top table{
+        width:70vw;
+    }
+    .regions-top th,
+    .regions-title-01 th{
+        font-size: 1.3em;
+    }
+    .regions-top table,
+    .regions-title-01 table{
+        font-size: .8em;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    header{
+        height:60vh;
+    }
+    .animals-page-header{
+        height:40vh;
+    }
+    .about-02{
+        display:block;
+    }
+    .about-02 article{
+        padding-top:5px;
+        padding-bottom: 20px;
+        margin: 10px 0;
+    }
+    .about-02 h2{
+        font-size: 1.2em;
+    }
+    .info h2{
+        font-size: 1.2em;
+    }
+    .partition{
+        padding-left: 5%;
+    }
+    .row-01,
+    .row-02{
+        display:block;
+    }
+    .animal-info{
+        width: 80vw;
+    }
+    .animal-info p{
+        width: 65vw;
+        font-size: .7em;
+    }
+    .animals-01{
+        width: 80vw;
+    }
+    .regions-top figure{
+        width: 65vw;
+    }
+    .regions-top table{
+        font-size: .6em;
+    }
+    .regions-title-01{
+        width: 70vw;
+    }
+    figcaption{
+        font-size: .6em;
+    }
+    .volcano{
+        padding-top:80px;
+    }
+    .old-map{
+        padding-top: 10px;
+    }
+    footer p{
+        font-size: .7em;
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+    header{
+        height: 50vh;
+    }
+    .top-title a{
+        font-size: 20px;
+        margin-top:20px;
+    }
+    .top-bar a{
+        font-size: 14px; }
+
+    .about-01 p{
+        width: 50vw;
+        font-size:10px;
+        }
+    .info p{
+        width: 50vw;
+        font-size: .6em;
+    }
+    .animal-info p{
+        width: 60vw;
+    }
+     
+    .partition a{
+        font-size: .5em;
+    }
+    .top-sites {
+        width: 80vw;
+    }
+
+   
+    footer p{
+        font-size: .7em;
+    }
+@media screen and (max-width: 400px){
+    header{
+        height: 35vh;
+    }
+    .top-title a{
+        margin-left:10px;
+        font-size: 15px;
+    }
+    .top-bar a{
+                padding-bottom:30px;
+        font-size: 12px; }
+
+}
+    
+}
